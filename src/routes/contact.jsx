@@ -20,7 +20,7 @@ export default function ContactView(){
 
                         <div className="col-sm-12 col-md-6 col-md-offset-3">
 
-                            <form method="POST" className="lgx-contactform" action="php/form-handler.php">
+                            <form className="lgx-contactform">
                                 <div className="form-group">
                                     <input type="text" name="lgxname" className="form-control lgxname" id="lgxname" placeholder="Enter Your Name" required/>
                                 </div>
@@ -38,10 +38,10 @@ export default function ContactView(){
                                 </div>
 
 
-                                <button onclick={submitForm} name="submit" value="contact-form" className="lgx-btn hvr-glow hvr-radial-out lgxsend lgx-send"><span>Submit</span></button>
+                                <button onClick={submitForm} name="submit" value="contact-form" className="lgx-btn hvr-glow hvr-radial-out lgxsend lgx-send"><span>Submit</span></button>
                             </form>
 
-                           <div id="lgx-form-modal" className="modal fade lgx-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                           <div id="lgx-form-modal" className="modal fade lgx-form-modal" tabIndex="-1" role="dialog" aria-hidden="true">
                                 <div className="modal-dialog modal-lg">
                                     <div className="modal-content lgx-modal-content">
                                         <div className="modal-header lgx-modal-header">
