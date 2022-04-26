@@ -5,7 +5,7 @@ import './index.css';
 
 import App from './App';
 import App2 from './App2';
-import About from './routes/about';
+import AboutView from './routes/about';
 import reportWebVitals from './reportWebVitals';
 import Index from './routes';
 
@@ -16,7 +16,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App2/>}>
       <Route path="/" element={<Index/>}/>
-        <Route path="about" element={<About/>}/>
+        <Route path="about" element={<AboutView/>}/>
       </Route>
       <Route path="old" element={<App/>}/>
       

@@ -1,7 +1,7 @@
-import Countdown from "../components/Countdown";
+import Countdown from "./Countdown";
 
-export default function Banner(){
-    let eventDate = "April 27, 2022";
+export default function Banner(props){
+    let eventDate = props.eventDate;
     return (
         <section>
             <div className="lgx-banner">
@@ -19,9 +19,9 @@ export default function Banner(){
                                             </div>
                                         </div>
                                         <div className="lgx-banner-info">
-                                            <h3 className="subtitle">Learn Anything</h3>
-                                            <h2 className="title">Conference Meet <span><b>2</b><b>0</b><b>2</b><b>1</b></span></h2>
-                                            <h3 className="location"><i className="fa fa-map-marker"></i> 21 King Street, Dhaka, Bangladesh.</h3>
+                                            <h3 className="subtitle">Moving Forward</h3>
+                                            <h2 className="title">Conference <span><b>2</b><b>0</b><b>2</b><b>2</b></span></h2>
+                                            <h3 className="location"><i className="fa fa-map-marker"></i>Eko Hotels & Suites, Victoria Island</h3>
                                         </div>
                                     </div>
                                 </div>

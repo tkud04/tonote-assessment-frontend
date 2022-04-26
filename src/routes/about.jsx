@@ -1,8 +1,6 @@
-export default function About(){
+import About from "../components/About";
+export default function AboutView(){
     return (
-        <main>
-            <h2>About Us</h2>
-            <p>This is the About page, using React.</p>
-        </main>
+        <About/>
     );
 }

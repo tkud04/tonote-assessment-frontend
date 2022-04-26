@@ -1,4 +1,14 @@
-export default function Footer(){
+import moment from "moment";
+import logo from '../assets/img/logo.png';
+
+export default function Footer(props){
+    let eventDate = moment(props.eventDate);
+
+    const submitSubscribeForm = (e) => {
+        e.preventDefault();
+        console.log("submit subscribe form");
+    }
+
     return (
      <footer>
         <div id="lgx-footer" className="lgx-footer">
@@ -12,7 +22,7 @@ export default function Footer(){
                                     <input type="email" id="subscribe" placeholder="Enter your email Address  ..." className="form-control lgx-input-form form-control"  />
                                 </div>
                                 <div className="form-group form-group-submit">
-                                    <button type="submit" name="lgx-submit" id="lgx-submit" className="lgx-btn lgx-submit"><span>Subscribe</span></button>
+                                    <button onClick={submitSubscribeForm} name="lgx-submit" id="lgx-submit" className="lgx-btn lgx-submit"><span>Subscribe</span></button>
                                 </div>
                             </form>
                     </div>
@@ -21,18 +31,18 @@ export default function Footer(){
             <div className="container">
                 <div className="lgx-footer-area">
                     <div className="lgx-footer-single">
-                        <a className="logo" href="index.html"><img src="assets/img/footer-logo.png" alt="Logo"/></a>
+                        <a className="logo" href="/"><img src={logo} alt="Logo"/></a>
                     </div>
                     <div className="lgx-footer-single">
                         <h3 className="footer-title">Venue Location </h3>
                         <h4 className="date">
-                            18 - 21 December, 2021
+                            {eventDate.format("dddd, MMMM Do YYYY")}
                         </h4>
                         <address>
-                            85 Golden Street, Darlinghurst <br/>
-                            ERP 2021, United States
+                            Eko Hotels & Suites, Victoria Island <br/>
+                            Lagos, NG
                         </address>
-                        <a id="myModalLabel2" data-toggle="modal" data-target="#lgx-modal-map" className="map-link" href="#"><i className="fa fa-map-marker" aria-hidden="true"></i> View Map location</a>
+                        <a id="myModalLabel2" data-toggle="modal" data-target="#lgx-modal-map" className="map-link" href="javascript:void(0)"><i className="fa fa-map-marker" aria-hidden="true"></i> View Map location</a>
                     </div>
                     <div className="lgx-footer-single">
                         <h3 className="footer-title">Social Connection</h3>
@@ -40,12 +50,10 @@ export default function Footer(){
                             You should connect social area <br/> for Any update
                         </p>
                         <ul className="list-inline lgx-social-footer">
-                            <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i className="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i className="fa fa-behance" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i className="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,7 +72,7 @@ export default function Footer(){
 
                 <div className="lgx-footer-bottom">
                     <div className="lgx-copyright">
-                        <p> <span>©</span> 2020 Emeet is powered by <a href="http://www.themearth.com/">themearth.</a> The property of their owners.</p>
+                        <p> <span>&copy;</span> 2022 This event is powered by <a href="javascript:void(0)">ToNote Technologies.</a></p>
                     </div>
                 </div>
 

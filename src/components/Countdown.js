@@ -33,10 +33,10 @@ export default function Countdown(props){
         <h3 className="date"><b className="lgx-counter">{date.format("D")}</b> <span>{date.format("MMMM")}</span></h3>
         <div className="lgx-countdown-area">
            <div id="lgx-countdown" data-date="">
-                <span class="lgx-days">{days} <i> Days </i></span>
-                <span class="lgx-hr">{hours} <i> Hours </i></span>
-                <span class="lgx-min">{minutes} <i> Mins </i></span> 
-                <span class="lgx-sec">{seconds} <i> Secs </i></span>
+                <span className="lgx-days">{days} <i> Days </i></span>
+                <span className="lgx-hr">{hours} <i> Hours </i></span>
+                <span className="lgx-min">{minutes} <i> Mins </i></span> 
+                <span className="lgx-sec">{seconds} <i> Secs </i></span>
             </div>
            {/* <h4>Today: {date.format("dddd, MMMM Do YYYY, h:mm a")}</h4> */}
         </div>

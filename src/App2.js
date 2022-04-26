@@ -11,13 +11,14 @@ import './assets/css/google-font.css?family=Oswald:400,700%7cPoppins:300,400,400
 import './assets/css/style-default.min.css';
 
 
-import Header from './partials/header';
-import Footer from './partials/footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Helmet from 'react-helmet';
 import { Outlet } from 'react-router-dom';
 
 export default function App2(){
-              
+    let eventDate = "April 27, 2022";
+
     return (
         <>
        <Helmet>
@@ -50,7 +51,9 @@ export default function App2(){
             <div>
               <Outlet/>
             </div>
-            <Footer/>
+            <Footer
+             eventDate={eventDate}
+            />
          </div>
        </>
     );
