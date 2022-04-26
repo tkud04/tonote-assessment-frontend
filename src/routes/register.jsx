@@ -1,0 +1,1 @@
+<h2>This is the register view</h2>
