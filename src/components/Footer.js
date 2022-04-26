@@ -10,7 +10,7 @@ export default function Footer(props){
     }
 
     return (
-     <footer>
+     <footer className="no-print">
         <div id="lgx-footer" className="lgx-footer">
             <div className="lgx-inner-footer">
                 <div className="lgx-subscriber-area ">
