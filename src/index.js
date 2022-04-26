@@ -8,7 +8,8 @@ import App2 from './App2';
 import AboutView from './routes/about';
 import reportWebVitals from './reportWebVitals';
 import Index from './routes';
-import RegisterView from './routes';
+import RegisterView from './routes/register';
+import ContactView from './routes/contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
@@ -18,7 +19,8 @@ root.render(
       <Route path="/" element={<App2/>}>
       <Route path="/" element={<Index/>}/>
         <Route path="about" element={<AboutView/>}/>
-        <Route path="register" element={RegisterView}/>
+        <Route path="register" element={<RegisterView/>}/>
+        <Route path="contact" element={<ContactView/>}/>
       </Route>
       <Route path="old" element={<App/>}/>
       
